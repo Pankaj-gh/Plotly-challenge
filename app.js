@@ -1,5 +1,5 @@
 function buildMetadata(sample) {
-    d3.json('samples.json').then(function(data){
+    d3.json('../data/samples.json').then(function(data){
 
         // print out the results for metadata
         var metadata = data.metadata
