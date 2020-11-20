@@ -25,7 +25,7 @@ function buildMetadata(sample) {
 function buildCharts(sample) {
 
   // Use `d3.json` to fetch the sample data for the plots
-  d3.json("../data/samples.json").then((data) => {
+  d3.json("samples.json").then((data) => {
     var samples= data.samples;
     var results= samples.filter(d => d.id == sample);
     var result= results[0]
